@@ -233,7 +233,7 @@ class NavBar extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Mazes
+                 
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <button
@@ -241,20 +241,8 @@ class NavBar extends Component {
                     type="button"
                     onClick={() => this.selectMaze("Generate Random Maze")}
                   >
-                    Random Maze
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectMaze("Generate Recursive Maze")}
-                  >
-                    Recursive Division Maze
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectMaze("Generate Vertical Maze")}
-                  >
+                    
+                    
                     
                   
                   </button>
