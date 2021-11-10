@@ -67,10 +67,7 @@ class NavBar extends Component {
         this.props.visualizeDijkstra();
       else if (this.state.algorithm === "Visualize A*")
         this.props.visualizeAStar();
-      else if (this.state.algorithm === "Visualize Greedy BFS")
-        this.props.visualizeGreedyBFS();
-      else if (this.state.algorithm === "Visualize Bidirectional Greedy")
-        this.props.visualizeBidirectionalGreedySearch();
+      
       else if (this.state.algorithm === "Visualize Breadth First Search")
         this.props.visualizeBFS();
       else if (this.state.algorithm === "Visualize Depth First Search")
@@ -98,10 +95,7 @@ class NavBar extends Component {
         this.props.generateRandomMaze();
       else if (this.state.maze === "Generate Recursive Maze")
         this.props.generateRecursiveDivisionMaze();
-      else if (this.state.maze === "Generate Vertical Maze")
-        this.props.generateVerticalMaze();
-      else if (this.state.maze === "Generate Horizontal Maze")
-        this.props.generateHorizontalMaze();
+      
     }
   }
 
@@ -195,25 +189,8 @@ class NavBar extends Component {
                     type="button"
                     onClick={() => this.selectAlgorithm("Visualize Greedy BFS")}
                   >
-                    Greedy Best First Search
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Bidirectional Greedy")
-                    }
-                  >
-                    Bidirectional Greedy Search
-                  </button>
-                  <div className="dropdown-divider"></div>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() =>
-                      this.selectAlgorithm("Visualize Breadth First Search")
-                    }
-                  >
+                    
+                    
                     Breadth First Search
                   </button>
                   <button
@@ -232,7 +209,7 @@ class NavBar extends Component {
                       this.selectAlgorithm("Visualize Random Walk")
                     }
                   >
-                    Random Walk
+                    
                   </button>
                 </div>
               </div>{" "}
@@ -278,14 +255,8 @@ class NavBar extends Component {
                     type="button"
                     onClick={() => this.selectMaze("Generate Vertical Maze")}
                   >
-                    Vertical Division Maze
-                  </button>
-                  <button
-                    className="dropdown-item btn-light"
-                    type="button"
-                    onClick={() => this.selectMaze("Generate Horizontal Maze")}
-                  >
-                    Horizontal Division Maze
+                    
+                  
                   </button>
                 </div>
               </div>{" "}
